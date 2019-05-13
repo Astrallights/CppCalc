@@ -1,0 +1,65 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+//#include "stdafx.h"
+//#include <iostream>
+//#include <cstdint>
+//#include <cstdint>
+using namespace std;
+
+int main()
+{
+    setlocale(0, ""); // 
+    int a, b, c, k;
+    met1:  cout << "Select an action : " << endl;
+    cout << "1) Addition(sum) " << endl;
+    cout << "2) Subtraction " << endl;
+    cout << "3) Multiplication " << endl;
+    cout << "4) Division " << endl;
+    cout << "5) Completion of the program(Exit) " << endl;
+    cin >> k;
+
+    switch (k)
+    {
+    case 1:
+        cout << "Enter the first number: ";
+        cin >> a;
+        cout << "Enter the second number: ";
+        cin >> b;
+        c = a + b;
+        cout << "The sum of the numbers is: " << c << endl;
+        break;
+
+
+    case 2:
+        cout << "Enter the first number: ";
+        cin >> a;
+        cout << "Enter the second number: ";
+        cin >> b;
+        c = a - b;
+        cout << "The difference of numbers is: " << c << endl;
+        break;
+    case 3:
+        cout << "Enter the first number: ";
+        cin >> a;
+        cout << "Enter the second number: ";
+        cin >> b;
+        c = a * b;
+        cout << "The multiplication of numbers is: " << c << endl;
+        break;
+    case 4:
+        cout << "Enter the first number: ";
+        cin >> a;
+        cout << "Enter the second number: ";
+        cin >> b;
+        c = a / b;
+        cout << "The division of numbers is: " << c << endl;
+        break;
+    case 5:
+        cout << "Thanks for use the programm!";
+        return 0;
+    }
+    system("pause");
+    goto met1;
+}
